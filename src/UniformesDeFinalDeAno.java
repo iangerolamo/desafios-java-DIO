@@ -61,7 +61,7 @@ public class UniformesDeFinalDeAno {
             uniformesDeFinalDeAno.add(new UniformesDeFinalDeAno(nome, tamanhoUniforme, corUniforme));
         }
         scanner.close();
-        Collections.sort(uniformesDeFinalDeAno, new ComparadorDeUniformes());
+        uniformesDeFinalDeAno.sort(new ComparadorDeUniformes());
 
         for (var item : uniformesDeFinalDeAno) {
             item.mostrarInformacoesDosEstudantes();
